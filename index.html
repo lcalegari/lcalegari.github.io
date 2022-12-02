@@ -1,53 +1,58 @@
 <html>
-    <head>
-        <title>Lisa Calegari's Professional Portfolio Website</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-    </head>
-    <body>
-        <h1 style="text-align: center;">Welcome to Lisa Calegari's Personal Website</h1>
-        <div id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li id="abt"><a href="bio.html">About Me</a></li>
-            </ul>
-        </div>
-        <div id="columns">
-        <h3 id="projcat">Some Projects I've done</h3>
-        <div id="cat1">
+  <head>
+    <title>Lisa Calegari's Professional Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center;">Welcome to Lisa Calegari's Personal Website</h1>
+    <div id="navbar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li id="abt">
+          <a href="bio.html">About Me</a>
+        </li>
+      </ul>
+    </div>
+    <div id="columns">
+      <h3 id="projcat">Some Projects I've done</h3>
+      <div id="cat1">
         <div class="project-display">
-            <h5>Recess: Interest-Based Connections App</h5>
-            <img class="appimg" id="recess" src="images/recess.png" alt="photo of the front page of an app displayed on an iphone, with multicolored paper airplanes and a logo"/>
-            <p class="inshort">In Short: <p class="proj-description" id="rec">I have been working on making a “connections app” (similar to a dating app but geared more towards friendship) with the help of a few of my friends on the UI design and Front-end. I have already done a variety of work on it, including generally setting up the structure of the app, setting up a database, setting up user authentication and profile creation, and mimicking Figma wireframes in swiftUI. I am also in the main leadership role on this project, which has given me some experience managing and delegating tasks as well
-         </p>
-         <p class="handytool"><button onclick="showText('rec')">click here to learn more!</button></p>
+          <h5>Recess: Interest-Based Connections App</h5>
+          <img class="appimg" id="recess" src="images/recess.png" alt="photo of the front page of an app displayed on an iphone, with multicolored paper airplanes and a logo" />
+          <p class="proj-description" id="rec">I have been working on making a “connections app” (similar to a dating app but geared more towards friendship) with the help of a few of my friends on the UI design and Front-end. I have already done a variety of work on it, including generally setting up the structure of the app, setting up a database, setting up user authentication and profile creation, and mimicking Figma wireframes in swiftUI. I am also in the main leadership role on this project, which has given me some experience managing and delegating tasks as well </p>
+          <p class="handytool">
+            <input type="button" id="button1" onclick="showText('rec', 'button1')" value="Click here to learn more!" />
+          </p>
         </div>
         <div class="project-display">
-            <h5>Ethereum Blockchain Loan Website</h5>
-            <img class="appimg" id="eth" src="images/ethlogo.jpeg" alt="photo of ethereum logo, a purple diamond"/>
-            <p class="inshort">In Short: <p class="proj-description" id="et">As a member of the blockchain programming club at Northwestern University, I wrote Solidity functions to build a website that ran on the Ethereum Blockchain and facilitated giving and receiving loans (and staking NTFs as collateral)</p>
-       </p>
-
-       <p class="handytool"><button onclick="showText('et')">click here to learn more!</button></p>
+          <h5>Ethereum Blockchain Loan Website</h5>
+          <img class="appimg" id="eth" src="images/ethlogo.jpeg" alt="photo of ethereum logo, a purple diamond" />
+          <p class="proj-description" id="et">As a member of the blockchain programming club at Northwestern University, I wrote Solidity functions to build a website that ran on the Ethereum Blockchain and facilitated giving and receiving loans (and staking NTFs as collateral)</p>
+          <p class="handytool">
+            <input type="button" id="button2" onclick="showText('et', 'button2')" value="Click here to learn more!"/>
+          </p>
         </div>
-        </div> 
-        <div id="cat2">
+        <div id="cat2" class="project-display">
             <h3>Lisa</h3>
-            <img class="me" src="images/prof.jpg" alt="a photo of me in front of some trees, I am a medium sized woman with brown hair"/>
-            <a href="bio.html">About Me Page</a>
-        </div>
-        </div>
-    </body>
-
+            <img class="me" src="images/prof.jpg" alt="a photo of me in front of some trees, I am a medium sized woman with brown hair" />
+            <br>
+            <a id="aboutmelink" href="bio.html">About Me Page</a>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
-
 <script>
-function showText(name) {
-  var elem = document.getElementById(name);
-  if(elem.style.display == "none"){
-    elem.style.display = "block";
-  }else{
-      elem.style.display = "none";
-
+  function showText(name, button) {
+    var elem = document.getElementById(name);
+    if (elem.style.display == "") {
+      elem.style.display = "block";
+      document.getElementById(button).value = "Hide";
+    } else {
+      elem.style.display = "";
+      document.getElementById(button).value = "Click here to learn more!";
+    }
   }
-}
 </script>

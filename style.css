@@ -1,12 +1,12 @@
 body{
-    background-color: beige;
+    background-color: steelblue;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration-thickness: 20px;
 }
 .project-display{
     display:inline-grid;
     text-align: center;
-    width: 45%;
+    width: 25%;
     margin:0;
     padding-left: 10px;
     padding-right:10px;
@@ -21,11 +21,41 @@ body{
 #recess{
     width:100px;
     height:200px;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 #eth{
     width:350px;
     height:200px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+#biodiv {
+    margin-left: calc(50% - (730px)/2 - 200px);
+    margin-top: 20px;
+    width: 700px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: floralwhite;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
+}
+
+#bio {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#lisa {
+    width:300px;
+    height:300px;
+    border-radius: 10px;
+    margin-left: 200px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 .inshort{
@@ -37,53 +67,112 @@ body{
 
 
 }
-p{
-
+#projcat {
+    margin-left: 20px;
+    padding-top:20px;
+    height: 30px;
 }
 .proj-description{
     display: none;
 
 }
 #columns{
-    display:inline-grid;
-    width:40%;
-    margin:0px;
+    display: block;
+    width: 95%;   
+    margin: 0px;
+    margin-left: 30px;
+    height: 83%; 
+    border-radius: 10px;
+    background-color: floralwhite;
 }
+
+#cat1{
+}
+
 #cat2{
-    width:20%;
-    display:inline-grid;
+    float: right;
+}
+
+#bioblock {
+    display:flex;
+}
+
+#resume, #aboutmelink {
+     padding: 10px;
+     border-radius: 10px;
+     background-color: steelblue;
+     color:white;
+     margin-left: calc(50% - 80px);
+     box-shadow: 0 2px 5px rgb(0 0 0 / 40%);
+}
+
+#aboutmelink {
+    width: 150px;
+}
+
+#navbar{
+    margin-left: 10px;
+}
+
+#info {
+    background-color: floralwhite;
+    width: 300px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
 }
 
 .me{
     width:200px;
     height:200px;
+    margin-left: 75px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
-
+button, input {
+    padding: 10px;
+    border: 0;
+    background-color: steelblue;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 40%);
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: navy;
+    font-weight: 700;
+    padding: 10px 10px 10px 10px;
+}
 ul {
     list-style-type: none;
-    background-color: #dddddd;
+    background-color: floralwhite;
     margin: 10px;
     margin-left:0px;
     margin-right:0px;
     padding: 10px;
     position: sticky;
-
-
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   }
 
   li {
     display: inline;
-    border-right: 1px solid #bbb;
-    padding-left: 10px;
-    padding-right:10px;
-    padding-bottom:10px;
-    padding-top:10px;
   }
 
-  li:hover{
-      background-color: bisque;
+  a:hover {
+    color:steelblue
   }
-  #abt{
-      float:right;
-      border-right:none;
+
+  h1 {
+    color: floralwhite;
+    text-shadow: 3px 3px rgb(0, 0, 0, 0.3);
+  }
+  #title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
